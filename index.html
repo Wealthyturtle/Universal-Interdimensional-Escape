@@ -25,27 +25,32 @@
         </header>
         
         <script>
-        function getBrowser() 
-        {
-          if( navigator.userAgent.indexOf("Chrome") != -1 )
+         function myFunction() { 
+         if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
           {
-            return "Chrome";
-          } else if( navigator.userAgent.indexOf("Opera") != -1 )
-          {
-            return "Opera";
-          } else if( navigator.userAgent.indexOf("MSIE") != -1 )
-          {
-            return "IE";
-            alert("Warning: The HTML Markup May Not be Properly Supported on the Internet Explorer. Switch to Google Chrome to Fix the Issue.");
-          } else if( navigator.userAgent.indexOf("Firefox") != -1 )
-          {
-            return "Firefox";
-            alert("Warning: The HTML Markup May Not be Properly Supported FireFox. Switch to Google Chrome to Fix the Issue.");
-          } else 
-          {
-            return "unknown";
+              alert('Opera');
           }
-        }
+          else if(navigator.userAgent.indexOf("Chrome") != -1 )
+          {
+              alert('Chrome');
+          }
+          else if(navigator.userAgent.indexOf("Safari") != -1)
+          {
+              alert('Safari');
+          }
+          else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+          {
+               alert('Firefox');
+          }
+          else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+          {
+            alert('IE'); 
+          }  
+          else 
+          {
+             alert('unknown');
+          }
+          }
         </script>
 
         <br>
@@ -112,7 +117,7 @@
           </details>
         </details>
         <br>
-        <h5>Last Updated: 12 September 2016</h2>
+        <h5>Last Updated: 12 September 2016</h5>
         <!--[if lt IE 9]>
         <section id="downloads" class="clearfix">
           <a href="https://github.com/Wealthyturtle/Universal-Interdimensional-Escape/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
