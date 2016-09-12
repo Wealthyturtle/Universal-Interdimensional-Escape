@@ -24,8 +24,11 @@
           </div>
         </header>
         
-        <script>
-        alert(navigator.userAgent);
+        <script type="text/javascript">
+        if ( navigator.userAgent.indexOf("MSIE")>0 )
+        {
+          alert("IE Detected");
+        }
         </script>
 
         <br>
