@@ -26,7 +26,19 @@
 
         <br>
         <div align = "center">
+        <button onclick="functionInfo()">Click Me for Some Information!</button>
         <button type="button" onclick="alert('Hey There! Just Some Info:\n\n* The HTML Markup of this Website May Not be Properly Supported by FireFox, Internet Explorer, and Possibly Other Internet Browsers\n* Only Videos with >100 Views are Showcased\n\nLast Updated: 13 September 2016')">Click Me for Some Information!</button>
+        <script>
+          function functionInfo() {
+            var x;
+            if (confirm("Hey There! Just Some Info:\n\n* The HTML Markup of this Website May Not be Properly Supported by FireFox, Internet Explorer, and Possibly Other Internet Browsers\n* Only Videos with >100 Views are Showcased\n\nLast Updated: 13 September 2016") == true) {
+              x = "Thanks For Finding Out Some Information!";
+            } else {
+                x = "Aww. You Clicked Cancel :(";
+             }
+             document.getElementById("demo").innerHTML = x;
+           }
+         </script>
         </div>
         <br>
         
